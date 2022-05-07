@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Text, View, Image, StyleSheet, Dimensions, FlatList } from "react-native";
-import Swiper from "react-native-swiper";
+import Swiper from "react-native-swiper/src";
 // import Video from "react-native-video";
 
 const { width } = Dimensions.get("window");
@@ -41,7 +41,7 @@ export function LivingDetails({ route, navigation }) {
         <View>
           <Text>Mobília:</Text>
           {moradia.mobiliado.length > 0 ? (
-            <FlatList data={moradia.mobiliado} renderItem={({ item }) => <Text key={item}>- {item}</Text>} />
+            <FlatList data={moradia.mobiliado} renderItem={({ item }) => <Text key={item}> - {item}</Text>} />
           ) : (
             <Text>Nenhuma mobília disponível</Text>
           )}
