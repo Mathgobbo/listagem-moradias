@@ -1,35 +1,20 @@
 import * as React from "react";
-import { Text, View, Image, StyleSheet, Dimensions, FlatList } from "react-native";
-import Swiper from "react-native-swiper/src";
-import { Video, AVPlaybackStatus } from "expo-av";
-
-const { width } = Dimensions.get("window");
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import FavoriteLivingButton from "./components/FavoriteLivingButton";
+import LivingMediasSwiper from "./components/LivingMediasSwiper";
 
 export function LivingDetails({ route, navigation }) {
   const { moradia } = route.params;
-  let swiperItems = [];
-  for (let foto of moradia.fotos) {
-    swiperItems.push(
-      <View style={styles.slide} key={foto}>
-        <Image style={styles.image} source={{ uri: foto }} />
-      </View>
-    );
-  }
-  for (let video of moradia.video) {
-    swiperItems.push(
-      <View style={styles.slide} key={video}>
-        <Video style={styles.image} resizeMode="cover" isLooping useNativeControls source={{ uri: video }} />
-      </View>
-    );
-  }
+
+  React.useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: () => <FavoriteLivingButton moradia={moradia} />,
+    });
+  }, [navigation]);
 
   return (
     <View>
-      <View style={{ height: 200 }}>
-        <Swiper autoplay activeDotColor="#aa56db">
-          {swiperItems}
-        </Swiper>
-      </View>
+      <LivingMediasSwiper moradia={moradia} />
       <View style={{ padding: 8 }}>
         <Text>{moradia?.nome}</Text>
         <Text>R$ {moradia?.valor}</Text>
@@ -57,14 +42,4 @@ export function LivingDetails({ route, navigation }) {
   );
 }
 
-const styles = StyleSheet.create({
-  slide: {
-    flex: 1,
-    justifyContent: "center",
-    backgroundColor: "transparent",
-  },
-  image: {
-    width,
-    flex: 1,
-  },
-});
+const styles = StyleSheet.create({});

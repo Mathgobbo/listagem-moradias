@@ -1,10 +1,10 @@
 import * as React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SplashScreen } from "./components/SplashScreen";
 import { LivingList } from "./components/LivingList";
-import { LivingDetails } from "./components/LivingDetails";
+import { LivingDetails } from "./components/LivingDetails/index";
 
 // You can import from local files
 import AssetExample from "./components/AssetExample";
