@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, StyleSheet, Text, TouchableOpacity, View, Image} from "react-native";
 
 export function LivingList({ navigation }) {
   return (
