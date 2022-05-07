@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Text, View, Image, StyleSheet, Dimensions, FlatList } from "react-native";
 import Swiper from "react-native-swiper/src";
-// import Video from "react-native-video";
+import { Video, AVPlaybackStatus } from "expo-av";
 
 const { width } = Dimensions.get("window");
+
 export function LivingDetails({ route, navigation }) {
   const { moradia } = route.params;
   let swiperItems = [];
@@ -14,13 +15,13 @@ export function LivingDetails({ route, navigation }) {
       </View>
     );
   }
-  // for (let video of moradia.video) {
-  //   swiperItems.push(
-  //     <View style={styles.slide} key={video}>
-  //       <Video style={styles.image} source={{ uri: video }} />
-  //     </View>
-  //   );
-  // }
+  for (let video of moradia.video) {
+    swiperItems.push(
+      <View style={styles.slide} key={video}>
+        <Video style={styles.image} resizeMode="cover" isLooping useNativeControls source={{ uri: video }} />
+      </View>
+    );
+  }
 
   return (
     <View>
@@ -31,10 +32,10 @@ export function LivingDetails({ route, navigation }) {
       </View>
       <View style={{ padding: 8 }}>
         <Text>{moradia?.nome}</Text>
-        <Text>{moradia?.valor}</Text>
+        <Text>R$ {moradia?.valor}</Text>
         <Text>{moradia?.endereco}</Text>
         <Text>{moradia?.area} m²</Text>
-        <Text>ALojamentos: {moradia?.qtdAlojamentos}</Text>
+        <Text>Alojamentos: {moradia?.qtdAlojamentos}</Text>
         <Text>Tipo da Moradia: {moradia?.tipoMoradia}</Text>
         <Text>Alojamento: {moradia?.tipoAlojamento}</Text>
         <Text>Tipo de Banheiro: {moradia?.tipoBanheiro}</Text>
@@ -46,6 +47,11 @@ export function LivingDetails({ route, navigation }) {
             <Text>Nenhuma mobília disponível</Text>
           )}
         </View>
+        <Text>Mais Informações:</Text>
+        <Text>{moradia.otherInfo}</Text>
+        <Text>Contato:</Text>
+        <Text>{moradia.email}</Text>
+        <Text>{moradia.telefone}</Text>
       </View>
     </View>
   );
