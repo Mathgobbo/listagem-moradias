@@ -8,13 +8,17 @@ export function LivingList({ navigation }) {
         data={require("../assets/moradias.json")}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item}>
-            <View>
+            <View style={styles.itemParent}>
               <View>
-                <Text>Blablka</Text>
+                <Image source={item.fotos[0]} />
               </View>
-              <Text> {item.nome}</Text>
-              <Text> {item.endereco}</Text>
-              <Text> {item.valor}</Text>
+              <View>
+                <Text> {item.nome} </Text>
+                <Text> {item.endereco}</Text>
+              </View>
+              <View style={styles.priceView}>
+                <Text>{item.valor}</Text>
+              </View>
             </View>
           </TouchableOpacity>
         )}
@@ -28,4 +32,11 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 8,
   },
+  itemParent: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  priceView: {
+    marginLeft: "auto",
+  }
 });
