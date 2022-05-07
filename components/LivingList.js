@@ -10,14 +10,14 @@ export function LivingList({ navigation }) {
           <TouchableOpacity onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item}>
             <View style={styles.itemParent}>
               <View>
-                <Image source={item.fotos[0]} />
+                <Image source={{uri: item.fotos[0]}} style={styles.imageContainer} />
               </View>
               <View>
                 <Text> {item.nome} </Text>
                 <Text> {item.endereco}</Text>
               </View>
               <View style={styles.priceView}>
-                <Text>{item.valor}</Text>
+                <Text> R$ {item.valor} </Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -38,5 +38,11 @@ const styles = StyleSheet.create({
   },
   priceView: {
     marginLeft: "auto",
+  },
+  imageContainer: {
+    height: 100,
+    width: 100,
+    borderRadius: 5,
+    marginRight: 20,
   }
 });

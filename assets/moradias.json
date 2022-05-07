@@ -2,7 +2,7 @@
   {
     "nome": "Alugo excelente cobertura 3 dorm Gran Ville sem elevador",
     "qtdAlojamentos": 6,
-    "endereco": "Rua Lauro Linhares",
+    "endereco": "Rua Ana Maria Nunes 222",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
@@ -22,7 +22,7 @@
   {
     "nome": "FLORIANÓPOLIS - Apartamento Padrão - Trindade",
     "qtdAlojamentos": 6,
-    "endereco": "Rua dos guri",
+    "endereco": "Rua Lauro Linhares, 2123",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
@@ -42,7 +42,7 @@
   {
     "nome": "Alugo apartamento amplo, arejado e iluminado no Córrego Grande - 2 Quartos",
     "qtdAlojamentos": 6,
-    "endereco": "Rua dos guri",
+    "endereco": "Rua Maestro Aldo Krieguer, 108",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
@@ -63,7 +63,7 @@
   {
     "nome": "Apartamento de 2 quartos para alugar no bairro Pantanal",
     "qtdAlojamentos": 6,
-    "endereco": "Rua dos guri",
+    "endereco": "R. Dep. Antonio Edu Vieira, 999",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
@@ -83,7 +83,7 @@
   {
     "nome": "APARTAMENTO, Residencial; 3 dormitorios, 1 bwc; Mobiliado",
     "qtdAlojamentos": 6,
-    "endereco": "Rua dos guri",
+    "endereco": "Rua Joao Pio Duarte Silva, 250",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
