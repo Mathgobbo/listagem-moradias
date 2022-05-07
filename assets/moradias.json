@@ -5,6 +5,7 @@
     "endereco": "Rua Ana Maria Nunes 222",
     "valor": "500",
     "tipoMoradia": "Masculino",
+    "tipoAlojamento": "Compartilhado",
     "mobiliado": [],
     "tipoBanheiro": "privado",
     "area": 1000,
@@ -27,6 +28,7 @@
     "tipoMoradia": "Masculino",
     "mobiliado": [],
     "tipoBanheiro": "privado",
+    "tipoAlojamento": "Compartilhado",
     "area": 1000,
     "fotos": [
       "https://img.olx.com.br/images/11/110283637940537.jpg",
@@ -42,6 +44,7 @@
   {
     "nome": "Alugo apartamento amplo, arejado e iluminado no Córrego Grande - 2 Quartos",
     "qtdAlojamentos": 6,
+    "tipoAlojamento": "Compartilhado",
     "endereco": "Rua Maestro Aldo Krieguer, 108",
     "valor": "500",
     "tipoMoradia": "Masculino",
@@ -66,6 +69,7 @@
     "endereco": "R. Dep. Antonio Edu Vieira, 999",
     "valor": "500",
     "tipoMoradia": "Masculino",
+    "tipoAlojamento": "Compartilhado",
     "mobiliado": [],
     "tipoBanheiro": "privado",
     "area": 1000,
@@ -87,6 +91,7 @@
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
+    "tipoAlojamento": "Compartilhado",
     "tipoBanheiro": "privado",
     "area": 1000,
     "fotos": [
