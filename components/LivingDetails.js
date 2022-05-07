@@ -1,18 +1,32 @@
 import * as React from "react";
 import { Text, View, Image, StyleSheet, Dimensions, FlatList } from "react-native";
 import Swiper from "react-native-swiper";
+// import Video from "react-native-video";
+
 const { width } = Dimensions.get("window");
 export function LivingDetails({ route, navigation }) {
   const { moradia } = route.params;
+  let swiperItems = [];
+  for (let foto of moradia.fotos) {
+    swiperItems.push(
+      <View style={styles.slide} key={foto}>
+        <Image style={styles.image} source={{ uri: foto }} />
+      </View>
+    );
+  }
+  // for (let video of moradia.video) {
+  //   swiperItems.push(
+  //     <View style={styles.slide} key={video}>
+  //       <Video style={styles.image} source={{ uri: video }} />
+  //     </View>
+  //   );
+  // }
+
   return (
     <View>
       <View style={{ height: 200 }}>
         <Swiper autoplay activeDotColor="#aa56db">
-          {moradia.fotos.map((foto) => (
-            <View style={styles.slide} key={foto}>
-              <Image style={styles.image} source={{ uri: foto }} />
-            </View>
-          ))}
+          {swiperItems}
         </Swiper>
       </View>
       <View style={{ padding: 8 }}>
@@ -27,7 +41,7 @@ export function LivingDetails({ route, navigation }) {
         <View>
           <Text>Mobília:</Text>
           {moradia.mobiliado.length > 0 ? (
-            <FlatList data={moradia.mobiliado} renderItem={({ item }) => <Text>- {item}</Text>} />
+            <FlatList data={moradia.mobiliado} renderItem={({ item }) => <Text key={item}>- {item}</Text>} />
           ) : (
             <Text>Nenhuma mobília disponível</Text>
           )}

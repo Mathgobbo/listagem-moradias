@@ -100,7 +100,9 @@
       "https://img.olx.com.br/images/17/178225882246240.jpg"
     ],
     "descricao": [],
-    "video": [],
+    "video": [
+      "https://storage.googleapis.com/itson-storage/users/2cbd52a8-fae9-41e4-af4b-da1898ff7dde/video/1651522519540-watermark-1651522457002-DSCN6228.MP4"
+    ],
     "telefone": "99999",
     "email": "alocahaha@hotmail.com",
     "otherInfo": "Textao...."
