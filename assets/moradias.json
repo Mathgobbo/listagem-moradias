@@ -1,6 +1,6 @@
 [
   {
-    "nome": "Alugo excelente cobertura 3 dorm Gran Ville sem elevador",
+    "nome": "Alugo excelente cobertura 3 dorm.",
     "qtdAlojamentos": 6,
     "endereco": "Rua Ana Maria Nunes 222",
     "valor": "500",
@@ -21,7 +21,7 @@
     "otherInfo": "Textao...."
   },
   {
-    "nome": "FLORIANÓPOLIS - Apartamento Padrão - Trindade",
+    "nome": "Apartamento para alugar, trindade.",
     "qtdAlojamentos": 6,
     "endereco": "Rua Lauro Linhares, 2123",
     "valor": "500",
@@ -42,7 +42,7 @@
     "otherInfo": "Textao...."
   },
   {
-    "nome": "Alugo apartamento amplo, arejado e iluminado no Córrego Grande - 2 Quartos",
+    "nome": "Alugo apartamento no córrego grande.",
     "qtdAlojamentos": 6,
     "tipoAlojamento": "Compartilhado",
     "endereco": "Rua Maestro Aldo Krieguer, 108",
@@ -64,7 +64,7 @@
     "otherInfo": "Textao...."
   },
   {
-    "nome": "Apartamento de 2 quartos para alugar no bairro Pantanal",
+    "nome": "Apartamento de 2 quartos para alugar.",
     "qtdAlojamentos": 6,
     "endereco": "R. Dep. Antonio Edu Vieira, 999",
     "valor": "500",
@@ -85,7 +85,7 @@
     "otherInfo": "Textao...."
   },
   {
-    "nome": "APARTAMENTO, Residencial; 3 dormitorios, 1 bwc; Mobiliado",
+    "nome": "Apertamento residencial 3 dormitórios.",
     "qtdAlojamentos": 6,
     "endereco": "Rua Joao Pio Duarte Silva, 250",
     "valor": "500",
