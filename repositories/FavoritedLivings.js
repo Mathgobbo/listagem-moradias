@@ -5,6 +5,7 @@ export const getData = async () => {
   if (value != null) return JSON.parse(value);
   return [];
 };
+
 export const setFavoritedLivings = async (livingsNames) =>
   await AsyncStorage.setItem("@favorited-livings", JSON.stringify(livingsNames));
 
@@ -15,14 +16,16 @@ export const addFavoritedLiving = async (living) => {
 
 export const handleFavoritedLiving = async (living) => {
   const livings = (await getData()) || [];
-  let indexInLivings = livings.findIndex((oldLivingName) => oldLivingName == living.nome);
-  if (indexInLivings === -1) return await setFavoritedLivings([...livings, living.nome]);
+  console.log(livings);
+  let indexInLivings = livings.findIndex((oldLiving) => oldLiving.nome == living.nome);
+  if (indexInLivings === -1) return await setFavoritedLivings([...livings, living]);
+
   livings.splice(indexInLivings, 1);
   return await setFavoritedLivings(livings);
 };
 
 export const isLivingFavoritedSelected = async (living) => {
   const livings = (await getData()) || [];
-  let indexInLivings = livings.findIndex((oldLivingName) => oldLivingName == living.nome);
+  let indexInLivings = livings.findIndex((oldLiving) => oldLiving.nome == living.nome);
   return indexInLivings > -1;
 };

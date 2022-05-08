@@ -1,20 +1,19 @@
-import * as React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import * as React from "react";
+import { Text, View } from "react-native";
+import { StackActions } from "@react-navigation/native";
 
-export function SplashScreen( {navigation} ) {
+export function SplashScreen({ navigation }) {
+  React.useEffect(() => {
+    setTimeout(() => {
+      // navigation.navigate("Moradias");
+      navigation.dispatch(StackActions.replace("Moradias"));
+    }, 1500);
+  }, [navigation]);
 
-  
-
-  React.useEffect(()=>{
-    setTimeout( () => {
-      navigation.navigate("Moradias")
-    }, 1500)
-  
-  }, [navigation])
-  return(
-    <View>
-      <Image source={require('../assets/snack-icon.png')} />
+  return (
+    <View style={{ justifyContent: "center", width: "100vw", height: "100vh", alignItems: "center" }}>
+      <Text style={{ fontWeight: "800" }}>UFSC</Text>
+      <Text style={{ fontWeight: "400" }}>HOUSING</Text>
     </View>
-  )
+  );
 }
-
