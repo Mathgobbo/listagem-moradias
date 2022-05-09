@@ -1,10 +1,20 @@
 import * as React from "react";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View, Platform, Linking, Pressable } from "react-native";
 import FavoriteLivingButton from "./components/FavoriteLivingButton";
 import LivingMediasSwiper from "./components/LivingMediasSwiper";
 
 export function LivingDetails({ route, navigation }) {
   const { moradia } = route.params;
+
+  function onAddressClick() {
+    const scheme = Platform.select({
+      ios: "maps:0,0?q=" + moradia.endereco,
+      android: "geo:0,0?q=" + moradia.endereco,
+      web: "https://www.google.com/maps/search/?api=1&query=" + moradia.endereco,
+    });
+
+    Linking.openURL(scheme);
+  }
 
   React.useLayoutEffect(() => {
     navigation.setOptions({
@@ -18,7 +28,9 @@ export function LivingDetails({ route, navigation }) {
       <View style={{ padding: 8 }}>
         <Text>{moradia?.nome}</Text>
         <Text>R$ {moradia?.valor}</Text>
-        <Text>{moradia?.endereco}</Text>
+        <Pressable onPress={onAddressClick}>
+          <Text style={{ color: "#00abab" }}>{moradia?.endereco}</Text>
+        </Pressable>
         <Text>{moradia?.area} m²</Text>
         <Text>Alojamentos: {moradia?.qtdAlojamentos}</Text>
         <Text>Tipo da Moradia: {moradia?.tipoMoradia}</Text>
