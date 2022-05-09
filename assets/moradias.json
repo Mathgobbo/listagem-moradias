@@ -1,14 +1,14 @@
 [
   {
     "nome": "Alugo excelente cobertura 3 dorm.",
-    "qtdAlojamentos": 6,
+    "qtdAlojamentos": 3,
     "endereco": "Rua Ana Maria Nunes 222",
-    "valor": "500",
+    "valor": "1700",
     "tipoMoradia": "Masculino",
     "tipoAlojamento": "Compartilhado",
     "mobiliado": [],
-    "tipoBanheiro": "privado",
-    "area": 1000,
+    "tipoBanheiro": "Privado",
+    "area": 150,
     "fotos": [
       "https://img.olx.com.br/images/90/909204278991639.jpg",
       "https://img.olx.com.br/images/90/907272518993907.jpg",
@@ -16,18 +16,18 @@
     ],
     "descricao": [],
     "video": [],
-    "telefone": "99999",
-    "email": "alocahaha@hotmail.com",
-    "otherInfo": "Textao...."
+    "telefone": "(48) 99863-8918",
+    "email": "viniciustuness7@gmail.com",
+    "otherInfo": "Apartamento com 3 dormitórios, academia, salão de festas."
   },
   {
     "nome": "Apartamento para alugar, trindade.",
-    "qtdAlojamentos": 6,
+    "qtdAlojamentos": 2,
     "endereco": "Rua Lauro Linhares, 2123",
     "valor": "500",
-    "tipoMoradia": "Masculino",
+    "tipoMoradia": "Feminino",
     "mobiliado": [],
-    "tipoBanheiro": "privado",
+    "tipoBanheiro": "Privado",
     "tipoAlojamento": "Compartilhado",
     "area": 1000,
     "fotos": [
@@ -37,20 +37,20 @@
     ],
     "descricao": [],
     "video": [],
-    "telefone": "99999",
-    "email": "alocahaha@hotmail.com",
-    "otherInfo": "Textao...."
+    "telefone": "(47) 99938-1468",
+    "email": "matgobbo@hotmail.com",
+    "otherInfo": "Apartamento com 2 dormitórios, com academia e salão de festas."
   },
   {
     "nome": "Alugo apartamento no córrego grande.",
-    "qtdAlojamentos": 6,
+    "qtdAlojamentos": 1,
     "tipoAlojamento": "Compartilhado",
     "endereco": "Rua Maestro Aldo Krieguer, 108",
     "valor": "500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
     "tipoBanheiro": "privado",
-    "area": 1000,
+    "area": 300,
     "fotos": [
       "https://img.olx.com.br/images/95/951220513832359.jpg",
       "https://img.olx.com.br/images/95/956290393259567.jpg",
@@ -59,20 +59,20 @@
     ],
     "descricao": [],
     "video": [],
-    "telefone": "99999",
-    "email": "alocahaha@hotmail.com",
-    "otherInfo": "Textao...."
+    "telefone": "(47) 99938-1468",
+    "email": "miemat159@gmail.com",
+    "otherInfo": "Apartamento com um dormitório, mobiliado, salão de festas."
   },
   {
     "nome": "Apartamento de 2 quartos para alugar.",
-    "qtdAlojamentos": 6,
+    "qtdAlojamentos": 2,
     "endereco": "R. Dep. Antonio Edu Vieira, 999",
-    "valor": "500",
+    "valor": "1000",
     "tipoMoradia": "Masculino",
     "tipoAlojamento": "Compartilhado",
     "mobiliado": [],
-    "tipoBanheiro": "privado",
-    "area": 1000,
+    "tipoBanheiro": "Privado",
+    "area": 250,
     "fotos": [
       "https://img.olx.com.br/images/16/169233286823188.jpg",
       "https://img.olx.com.br/images/16/167299401241891.jpg",
@@ -80,20 +80,20 @@
     ],
     "descricao": [],
     "video": [],
-    "telefone": "99999",
-    "email": "alocahaha@hotmail.com",
-    "otherInfo": "Textao...."
+    "telefone": "(47) 99938-1468",
+    "email": "matgobbo@hotmail.com",
+    "otherInfo": "Apartamento com dois dormitórios, animais de estimação permitido, piscina."
   },
   {
     "nome": "Apertamento residencial 3 dormitórios.",
-    "qtdAlojamentos": 6,
+    "qtdAlojamentos": 3,
     "endereco": "Rua Joao Pio Duarte Silva, 250",
-    "valor": "500",
+    "valor": "1500",
     "tipoMoradia": "Masculino",
     "mobiliado": [],
     "tipoAlojamento": "Compartilhado",
-    "tipoBanheiro": "privado",
-    "area": 1000,
+    "tipoBanheiro": "Privado",
+    "area": 100,
     "fotos": [
       "https://img.olx.com.br/images/17/179262401841954.jpg",
       "https://img.olx.com.br/images/17/175245289918171.jpg",
@@ -103,8 +103,8 @@
     "video": [
       "https://storage.googleapis.com/itson-storage/users/2cbd52a8-fae9-41e4-af4b-da1898ff7dde/video/1651522519540-watermark-1651522457002-DSCN6228.MP4"
     ],
-    "telefone": "99999",
-    "email": "alocahaha@hotmail.com",
-    "otherInfo": "Textao...."
+    "telefone": "(48) 99863-8918",
+    "email": "viniciustuness7@gmail.com",
+    "otherInfo": "Apartamento com 3 dormitórios, salão de festas, academia."
   }
 ]

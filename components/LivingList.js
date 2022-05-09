@@ -8,17 +8,17 @@ export function LivingList({ navigation }) {
         data={require("../assets/moradias.json")}
         renderItem={({ item }) => (
           <TouchableOpacity 
-          onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item} >
+            onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item} >
             <View style={styles.itemParent} >
               <View>
                 <Image source={{uri: item.fotos[0]}} style={styles.image} />
               </View>
               <View>
-                <Text style={styles.infoMoradia}> {item.nome} </Text>
-                <Text style={styles.infoMoradia}> {item.endereco}</Text>
+                <Text style={styles.infoMoradia}> {item?.nome} </Text>
+                <Text style={styles.infoMoradia}> {item?.endereco}</Text>
               </View>
               <View style={styles.valorContainer}>
-                <Text style={styles.priceView}> R$ {item.valor} </Text>
+                <Text style={styles.priceView}> R$ {item?.valor} </Text>
               </View>
             </View>
           </TouchableOpacity>
