@@ -23,8 +23,10 @@ export function LivingList({ navigation }) {
               <View>
                 <Image source={{ uri: item.fotos[0] }} style={styles.image} />
               </View>
-              <View>
-                <Text style={styles.infoMoradia}> {item?.nome} </Text>
+              <View style={styles.infoParent}>
+                <View style={{ flexDirection: "row" }}>
+                  <Text style={styles.infoMoradia}> {item?.nome} </Text>
+                </View>
                 <Text style={styles.infoMoradia}> {item?.endereco}</Text>
               </View>
               <View style={styles.valorContainer}>
@@ -47,8 +49,13 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
   },
+  infoParent: {
+    flex: 2,
+  },
   infoMoradia: {
     fontSize: 12,
+    flexShrink: 1,
+    flex: 1,
   },
   priceView: {
     marginLeft: "auto",
