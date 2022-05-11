@@ -23,9 +23,7 @@ function LivingMediasSwiper({ moradia }) {
   }
   return (
     <View style={{ height: 200 }}>
-      <Swiper autoplay activeDotColor="#aa56db">
-        {swiperItems}
-      </Swiper>
+      <Swiper activeDotColor="#aa56db">{swiperItems}</Swiper>
     </View>
   );
 }
@@ -42,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default React.memo(LivingMediasSwiper);
+export default LivingMediasSwiper;

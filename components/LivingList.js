@@ -16,7 +16,8 @@ export function LivingList({ navigation }) {
     <View>
       <FlatList
         data={require("../assets/moradias.json")}
-        renderItem={({ item }) => (
+        keyExtractor={(item) => item.nome + "-" + item.endereco}
+        renderItem={({ item, index }) => (
           <TouchableOpacity onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item}>
             <View style={styles.itemParent}>
               <View>

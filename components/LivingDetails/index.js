@@ -16,6 +16,13 @@ export function LivingDetails({ route, navigation }) {
     Linking.openURL(scheme);
   }
 
+  function onPhoneClick() {
+    Linking.openURL("tel:" + moradia.telefone);
+  }
+  function onMailClick() {
+    Linking.openURL("mailto:" + moradia.email);
+  }
+
   React.useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => <FavoriteLivingButton moradia={moradia} />,
@@ -47,8 +54,12 @@ export function LivingDetails({ route, navigation }) {
         <Text>Mais Informações:</Text>
         <Text>{moradia.otherInfo}</Text>
         <Text>Contato:</Text>
-        <Text>{moradia.email}</Text>
-        <Text>{moradia.telefone}</Text>
+        <Pressable onPress={onMailClick}>
+          <Text>{moradia.email}</Text>
+        </Pressable>
+        <Pressable onPress={onPhoneClick}>
+          <Text>{moradia.telefone}</Text>
+        </Pressable>
       </View>
     </View>
   );

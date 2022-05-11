@@ -16,7 +16,7 @@ export function SelectedLivingList({ navigation }) {
   }
 
   React.useEffect(() => {
-    getFavoritedLivings();
+    if (!isLoading) getFavoritedLivings();
   }, [isFocused]);
 
   return (
@@ -28,11 +28,12 @@ export function SelectedLivingList({ navigation }) {
       ) : (
         <FlatList
           data={livings}
+          keyExtractor={(item) => item.nome + "-" + item.endereco}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => navigation.navigate("Detalhes", { moradia: item })} style={styles.item}>
               <View style={styles.itemParent}>
                 <View>
-                  <Image source={{ uri: item.fotos[0] }} style={styles.image} />
+                  <Image source={{ uri: item?.fotos[0] || "" }} style={styles.image} />
                 </View>
                 <View>
                   <Text style={styles.infoMoradia}> {item?.nome} </Text>
